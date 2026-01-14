@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'bm-plain';
+    src: url(fonts/BMplain.TTF);
+}
+
+.bm-plain {
+    font-family: 'bm-plain';
+}
+
+@font-face {
+    font-family: 'bm-receipt';
+    src: url(fonts/BMREA___.TTF);
+}
+
+.bm-receipt {
+    font-family: 'bm-receipt';
+}
+
+@font-face {
+    font-family: 'ldr';
+    src: url(fonts/ldr0.ttf);
+}
+
+.ldr {
+    font-family: 'ldr';
+}
+
+@font-face {
+    font-family: 'bloks';
+    src: url(fonts/kasual_bloks.ttf);
+}
+
+.bloks {
+    font-family: 'bloks';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'telegraphic';
+    src: url(fonts/telegraphiclight.ttf);
+}
+
+.telegraphic {
+    font-family: 'telegraphic';
+}
+
+@font-face {
+    font-family: 'bm-press';
+    src: url(fonts/BMpress.TTF);
+}
+
+.bm-press {
+    font-family: 'bm-press';
+}
+
+@font-face {
+    font-family: pixel operator;
+    src: url(fonts/PixelOperator-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'neue haas grotesk';
+    src: url(fonts/NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {
+    font-family: 'neue haas grotesk';
+    src: url(fonts/NeueHaasDisplayRomanItalic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'neue haas grotesk';
+    src: url(fonts/NeueHaasDisplayMediu.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'neue haas grotesk';
+    src: url(fonts/NeueHaasDisplayBold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'neue haas grotesk';
+    src: url(fonts/NeueHaasDisplayBoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ibm plex mono";
+    src: url(fonts/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: "nitrods";
+    src: url(fonts/nitrods-font.ttf);
+}

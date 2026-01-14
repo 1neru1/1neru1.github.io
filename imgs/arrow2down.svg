@@ -1,0 +1,6 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<style>
+		.s0 { fill: #000000 } 
+	</style>
+	<path class="s0" d="m0 416h512v96h-512zm0-416h96v512h-96zm531.5-87.4l67.9 67.9-470.9 470.9-67.9-67.9z"/>
+</svg>

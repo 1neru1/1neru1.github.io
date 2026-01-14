@@ -1,0 +1,104 @@
+body {
+    background: none !important;
+}
+
+#musicplayer {
+  width: 100%; /* width of the player - make it 100% if you want it to fill your container */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.track-name, .track-artist {
+    height: 2em;
+}
+
+.track-art {
+    aspect-ratio: 1/1;
+    height: 75px;
+    background-size: cover
+}
+
+.now-playing {
+    text-align: right;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px !important; /* size of controls */
+  width: 100%;
+}
+
+.buttons div {
+  width: min-content;
+}
+
+.playpause-track {
+  line-height: 1;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+  color: var(--text); /* color of buttons */
+  font-size: 16px !important; /* size of buttons */
+}
+
+.volume-icon {
+    color: var(--text);
+}
+
+.seeking,
+.volume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none; /* removes default appearance of the tracks */
+  width: 100%;
+}
+
+input[type="range"]:focus {
+  outline: none; /* removes outline around tracks when focusing */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px; /* thickness of seeking track */
+  background: var(--text); /* color of seeking track */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  aspect-ratio: 2/1;
+  width: 6px;
+  border-radius: 0px; /* change to 5px if you want a circle seeker */
+  background: var(--text); /* color of seeker square */
+  -webkit-appearance: none;
+  margin-top: -1.5px; /* fixes the weird margin around the seeker square in chrome */
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 4px; /* thickness of seeking track */
+  background: var(--text); /* color of seeking track */
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 10px; /* height of seeking square */
+  width: 10px; /* width of seeking square */
+  border-radius: 0px; /* change to 5px if you want a circle seeker */
+  background: var(--text); /* color of seeker square */
+  border: none; /* removes weird border around seeker square in firefox */
+}

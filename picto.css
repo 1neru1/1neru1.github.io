@@ -1,0 +1,114 @@
+html {
+  overflow: hidden;
+}
+
+#picto {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 2/3;
+  width: min-content;
+  color: #000;
+  filter: hue-rotate(180deg) invert(1);
+}
+
+#picto::-webkit-scrollbar {
+  width: 0;
+}
+
+#picto > * {
+  aspect-ratio: 4/3;
+  width: var(--picto-width);
+  background: var(--bgimg) 0 / cover, var(--link);
+  image-rendering: pixelated;
+  font-size: calc(1.6vh + 1.6vw);
+  font-family: nitrods;
+  box-sizing: border-box;
+}
+
+#picto p {
+  margin: 0;
+}
+
+#picto > .bottom {
+  --bgimg: url(imgs/pictochat8.png);
+}
+
+#picto > .bottom > * {
+  position: relative;
+}
+
+#picto > .bottom .msg {
+  left: 13.5%;
+  top: 9%;
+}
+
+#picto p {
+  line-height: 1.5;
+}
+
+#picto .msg p:first-child::before {
+  content: "nerujpg";
+  display: inline-block;
+  color: var(--link);
+  position: relative;
+  margin-right: 5%;
+}
+
+#picto > .top {
+  --bgimg: url(imgs/pictochat1.png);
+  padding: 0.4% 0.4% 0.4% 4%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+#picto > .top .msg {
+  width: calc(var(--picto-width) * 0.91775);
+  aspect-ratio: 3.343/1;
+  box-sizing: border-box;
+  background: url(imgs/pictochat7.png) 0 / cover, var(--link);
+  padding: 1% 6%;
+  direction: ltr;
+  clip-path: polygon(
+    0.35em 0%,
+    calc(100% - 0.35em) 0%,
+    100% 0.35em,
+    100% calc(100% - 0.35em),
+    calc(100% - 0.35em) 100%,
+    0.35em 100%,
+    0% calc(100% - 0.35em),
+    0% 0.35em
+  );
+}
+
+#picto > .top::-webkit-scrollbar {
+  width: 9.5%;
+}
+
+#picto > .top::-webkit-scrollbar-track {
+  background: #0000;
+  background-clip: content-box;
+}
+
+#picto > .top::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #a8a8a8;
+  border: 6px solid #f8f8f8;
+}
+
+#picto > .top::-webkit-scrollbar-button:single-button {
+  width: 9.5%;
+}
+
+#picto > .top::-webkit-scrollbar-button:single-button:increment {
+  height: 20.5%;
+  background: url(imgs/bottomicons.png), var(--link);
+}
+
+#picto > .top::-webkit-scrollbar-button:single-button:decrement {
+  height: 10.5%;
+  background: url(imgs/topicons.png), var(--link);
+}

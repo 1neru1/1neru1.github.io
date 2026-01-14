@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div id="musicplayer">
+      <div class="flex" style="gap: 10px">
+        <div class="track-art"></div>
+        <div>
+          <div>
+            <div
+              style="display: flex; justify-content: space-between; width: 117px;"
+            >
+              <div class="track-info">
+                <div class="track-artist"></div>
+                <div class="track-name"></div>
+              </div>
+              <div class="now-playing"></div>
+            </div>
+            <div class="buttons">
+              <div class="prev-track" onclick="prevTrack()">l<</div>
+
+              <div class="playpause-track" onclick="playpauseTrack()">
+                &#9654;
+              </div>
+
+              <div class="next-track" onclick="nextTrack()">>l</div>
+            </div>
+          </div>
+          <audio id="music" src=""></audio>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="seeking">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="0"
+          class="seek_slider"
+          onchange="seekTo()"
+        />
+      </div>
+
+      <div class="volume">
+        <div class="volume-icon">VOLUME</div>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="25"
+          class="volume_slider"
+          onchange="setVolume()"
+        />
+        <!-- the default volume value is 25, change this if you want it to be higher or lower (i wouldn't recommend it bc it gets really loud) -->
+      </div>
+
+      <div style="display: flex; justify-content: space-between;">
+        <div class="current-time">00:00</div>
+        <div class="total-duration">0:00</div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
