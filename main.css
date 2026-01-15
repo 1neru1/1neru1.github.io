@@ -248,7 +248,7 @@ main > .left {
       color-mix(in hsl, var(--bg), #0000) 90%,
       var(--bg)
     ),
-    url(imgs/__original_drawn_by_hinasaki_you__3f42c75193d1d72459ea4d9c44d0d307.jpg)
+    url(imgs/original_drawn_by_hinasaki_you__3f42c75193d1d72459ea4d9c44d0d307.jpg)
       top/cover;
   height: 90px;
   box-shadow: inset 0 0 5px 2.5px var(--bg), inset 0 0 2.5px 2.5px var(--bg);
